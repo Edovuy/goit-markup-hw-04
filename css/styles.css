@@ -194,32 +194,14 @@ img {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.specifics-item::before {
-  display: block;
-  content: "";
+.specifics-icon {
   width: 264px;
   height: 112px;
-  background: var(--cloud);
+  background: #F4F4FD;
   border-radius: 4px;
-  background-size: 64px 64px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.specifics-item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.specifics-item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-
-.specifics-item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.specifics-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .specifics-text,
@@ -315,7 +297,9 @@ img {
   height: 100%;
   border-radius: 50%;
   background: #4D5AE5;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-soc-link:hover {
@@ -388,7 +372,6 @@ img {
   background-color: var(--brand-color);
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
 }
 
 .footer-container{
